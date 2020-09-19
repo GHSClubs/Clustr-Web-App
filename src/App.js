@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Club from './components/Club.js';
 import Colors from './Colors.js';
@@ -11,14 +10,17 @@ function App() {
       <Club
         name="Basketball Club"
         color={Colors.LIGHT_ORANGE}
+        tags={['Monday', 'Tier 1']}
       />
       <Club
         name="Beat Production Club"
         color={Colors.ORANGE}
+        tags={['Tuesday', 'Thursday', 'Tier 3']}
       />
       <Club
         name="Chess Club"
         color={Colors.PINK}
+        tags={['Wednesday', 'Tier 2']}
       />
       <Club
         name="Service Club"

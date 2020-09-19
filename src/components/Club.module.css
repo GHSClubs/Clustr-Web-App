@@ -8,7 +8,7 @@
   box-sizing: border-box;
   border-radius: 10px;
   background-color: #ffa789;
-  color: white;
+  color: black;
   word-break: break-word;
 }
 
@@ -18,6 +18,16 @@
   margin: 0;
 }
 
-.description {
-  display: none;
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 -5px;
+  padding: 0;
+}
+.tag {
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 50px;
 }
