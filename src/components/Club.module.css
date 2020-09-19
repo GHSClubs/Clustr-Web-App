@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 130px;
+  padding: 20px;
+  margin: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #ffa789;
+  color: white;
+  word-break: break-word;
+}
+
+.name {
+  font-weight: normal;
+  font-size: 24px;
+  margin: 0;
+}
+
+.description {
+  display: none;
+}
