@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  padding-top: 15px;
+}
+
+.info {
+  flex: 2 0 0;
+  padding: 20px;
+}
+
+.backBtn {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .clubSelected .list {
+    display: none;
+  }
+
+  .backBtn {
+    display: block;
+  }
+}
