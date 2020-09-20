@@ -11,11 +11,24 @@
   --brown: #806961;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+html,
+body,
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
 }
 
 code {
