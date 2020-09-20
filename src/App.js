@@ -17,8 +17,7 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    // Load from UGWA (for now?) lol
-    fetch('https://orbiit.github.io/gunn-web-app/json/clubs.json?for=clustr')
+    fetch(process.env.PUBLIC_URL + '/gunn-clubs-2020-21.json')
       .then(response => response.json())
       .then(clubData => {
         this.setState({
