@@ -1,5 +1,5 @@
 {
-  "short_name": "Clustr",
+  "short_name": "React App",
   "name": "Create React App Sample",
   "icons": [
     {
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#ffa789",
-  "background_color": "#f4b869"
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
 }
