@@ -15,6 +15,17 @@ html {
   height: 100%;
 }
 
+h1{
+  padding-left: 1rem; 
+  margin-bottom: .2px; 
+  color: #f0a35b; 
+}
+h2{
+  padding-left: 1rem; 
+  font-weight: 500; 
+  font-size: 15px;
+}
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
