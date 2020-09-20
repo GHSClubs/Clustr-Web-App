@@ -10,9 +10,9 @@ class ClubList extends React.Component {
   };
 
   handleSelect = clubName => {
-    this.setState({
-      selectedClub: clubName
-    });
+    // this.setState({
+    //   selectedClub: clubName
+    // });
   };
 
   handleBack = () => {
@@ -28,12 +28,15 @@ class ClubList extends React.Component {
     return (
       <div className={`${styles.wrapper} ${selectedClub ? styles.clubSelected : ''}`}>
         <div className={styles.list}>
-          {clubs.map(({name, color, tags}) => (
+          {clubs.map(({name, description, day, time, color, tags}) => (
             <Club
               key={name}
               name={name}
               color={color}
               tags={tags}
+              description={description}
+              meetingDay={day}
+              meetingTime={time}
               onSelect={this.handleSelect}
             />
           ))}
