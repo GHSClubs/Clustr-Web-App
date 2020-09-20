@@ -47,7 +47,7 @@ class ClubList extends React.Component {
             <ClubInfo
               name={selectedClub.name}
               description={selectedClub.description}
-              joinable={true}
+              joinable={false}
               meetingDay={selectedClub.day}
               meetingTime={selectedClub.time}
             />
