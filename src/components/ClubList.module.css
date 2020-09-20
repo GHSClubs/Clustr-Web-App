@@ -1,5 +1,7 @@
 .wrapper {
   display: flex;
+  height: 0;
+  flex: auto;
 }
 
 .list {
@@ -7,11 +9,17 @@
   flex-direction: column;
   flex: 1 0 0;
   padding-top: 15px;
+  overflow: auto;
+  /* Momentum scrolling on iOS */
+  -webkit-overflow-scrolling: touch;
 }
 
 .info {
   flex: 2 0 0;
   padding: 20px;
+  overflow: auto;
+  /* Momentum scrolling on iOS */
+  -webkit-overflow-scrolling: touch;
 }
 
 .backBtn {
