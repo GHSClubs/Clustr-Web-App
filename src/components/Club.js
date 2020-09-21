@@ -37,7 +37,7 @@ class Club extends React.Component {
         </ul>
         {open && <>
           <p className={styles.field}>{description}</p>
-          <p className={styles.field}>Time: {meetingTime}</p>
+          <p className={styles.field}>Time: <strong>{meetingTime}</strong></p>
           <p className={styles.field}>President: {presidents}</p>
           {zoomLink && <p className={styles.field}>Zoom link: <a
             className={styles.link}

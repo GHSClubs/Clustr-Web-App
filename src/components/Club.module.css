@@ -43,6 +43,9 @@
   margin-top: 20px;
   font-weight: 300;
 }
+.field strong {
+  font-weight: 500;
+}
 
 .link {
   font-weight: 500;
