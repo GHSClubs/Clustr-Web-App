@@ -18,7 +18,13 @@ html {
 h1{
   padding-left: 1rem; 
   margin-bottom: .2px; 
-  color: #f0a35b; 
+  color:#FE4A4A; 
+}
+.topnav{
+  padding-left: 1rem; 
+  width: 1000px;
+  height: 20px;
+        
 }
 
 
