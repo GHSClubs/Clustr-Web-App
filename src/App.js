@@ -28,7 +28,7 @@ class App extends React.Component {
             zoomLink: link
           };
         });
-        for (let i = 0; i < clubs.length-1; i++) {
+        for (let i = 0; i < clubs.length; i++) {
           if (i%4.0 === 1) {
             clubs[i].color = Colors.ORANGE
           }

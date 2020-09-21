@@ -4,7 +4,13 @@ import Club from './Club.js';
 import ClubInfo from './ClubInfo.js';
 import Colors from '../Colors.js';
 import FilterButton from './FilterButton.js';
+import Search from './Search.js';
 import styles from './ClubList.module.css';
+
+// https://stackoverflow.com/a/9310752
+function escapeRegExp(text) {
+  return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
+}
 
 const allFilters = [
   {name: 'Monday', color: Colors.PINK},
@@ -22,6 +28,7 @@ const allFilters = [
 class ClubList extends React.Component {
   state = {
     selectedClub: null,
+    search: '',
     filters: []
   };
 
@@ -49,18 +56,39 @@ class ClubList extends React.Component {
     }
   };
 
+  handleSearch = search => {
+    this.setState({ search });
+  };
+
   render() {
     const {clubs} = this.props;
-    const {selectedClub: selectedClubName, filters} = this.state;
+    const {selectedClub: selectedClubName, search, filters} = this.state;
     const selectedClub = clubs.find(club => club.name === selectedClubName);
-    const filteredClubs = filters.length
-      ? clubs
-        .filter(club => filters.every(filter => club.tags.includes(filter)))
-      : clubs
+    const searchFilter = search ? new RegExp(escapeRegExp(search), 'ig') : null;
+    const filteredClubs = clubs.filter(club => {
+      if (filters.length > 0) {
+        // Hide clubs that do not have a selected filter
+        if (filters.some(filter => !club.tags.includes(filter))) {
+          return false;
+        }
+      }
+      if (searchFilter) {
+        // Hide clubs that do not have the search query in its name nor description
+        if (!searchFilter.test(club.name) && !searchFilter.test(club.description)) {
+          return false;
+        }
+      }
+      return true;
+    });
     return (
       <div className={`${styles.wrapper} ${selectedClub ? styles.clubSelected : ''}`}>
         <div className={styles.list}>
+          <h1> Gunn Clubs </h1> 
           <div className={styles.searchWrapper}>
+            <Search
+              search={search}
+              onChange={this.handleSearch}
+            />
             <div className={styles.filters}>
               Filter by:
               {allFilters.map(({name, color}) => (
@@ -85,6 +113,7 @@ class ClubList extends React.Component {
                 zoomLink={zoomLink}
                 meetingDay={day}
                 meetingTime={time}
+                searchFilter={searchFilter}
                 filters={filters}
                 onSelect={this.handleSelectClub}
               />
