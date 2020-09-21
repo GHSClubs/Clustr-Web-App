@@ -1,0 +1,13 @@
+.button {
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-color: var(--color);
+  border: 1px solid transparent;
+}
+
+.selected {
+  background-color: white;
+  border-color: black;
+}
