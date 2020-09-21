@@ -12,7 +12,7 @@ class App extends React.Component {
     fetch(process.env.PUBLIC_URL + '/gunn-clubs-2020-21.json')
       .then(response => response.json())
       .then(clubData => {
-        const clubs = Object.entries(clubData).map(([name, {new: isNew, desc, day, time, tier}]) => {
+        const clubs = Object.entries(clubData).map(([name, {new: isNew, desc, day, time, tier, president, link}]) => {
           const days = day.split(', ');
           return {
             name,
@@ -23,7 +23,9 @@ class App extends React.Component {
               ...days,
               `Tier ${tier}`,
               isNew ? 'New' : 'Returning'
-            ]
+            ],
+            presidents: president,
+            zoomLink: link
           };
         });
         for (let i = 0; i < clubs.length-1; i++) {
