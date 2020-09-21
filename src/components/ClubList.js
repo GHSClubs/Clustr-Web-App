@@ -74,13 +74,15 @@ class ClubList extends React.Component {
               ))}
             </div>
           </div>
-          {filteredClubs.map(({name, description, day, time, color, tags}) => (
+          {filteredClubs.map(({name, description, day, time, color, tags, presidents, zoomLink}) => (
               <Club
                 key={name}
                 name={name}
                 color={color}
                 tags={tags}
                 description={description}
+                presidents={presidents}
+                zoomLink={zoomLink}
                 meetingDay={day}
                 meetingTime={time}
                 filters={filters}

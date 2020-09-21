@@ -13,8 +13,12 @@ class Club extends React.Component {
     })
   };
 
+  handleLinkClick = e => {
+    e.stopPropagation();
+  };
+
   render() {
-    const {name, color, tags, description, meetingTime, filters} = this.props;
+    const {name, color, tags, description, meetingTime, presidents, zoomLink, filters} = this.props;
     const {open} = this.state;
     return (
       <button
@@ -33,7 +37,15 @@ class Club extends React.Component {
         </ul>
         {open && <>
           <p className={styles.field}>{description}</p>
-          <p className={styles.field}>Time: {meetingTime}</p>
+          <p className={styles.field}>Time: <strong>{meetingTime}</strong></p>
+          <p className={styles.field}>President: {presidents}</p>
+          {zoomLink && <p className={styles.field}>Zoom link: <a
+            className={styles.link}
+            href={zoomLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={this.handleLinkClick}
+          >{zoomLink.replace(/^https?:\/\//, '')}</a></p>}
         </>}
       </button>
     );
