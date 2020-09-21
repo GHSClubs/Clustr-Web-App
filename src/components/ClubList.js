@@ -73,8 +73,12 @@ class ClubList extends React.Component {
         }
       }
       if (searchFilter) {
-        // Hide clubs that do not have the search query in its name nor description
-        if (!searchFilter.test(club.name) && !searchFilter.test(club.description)) {
+        // Hide clubs that do not have the search query in its name, description, nor presidents
+        if (
+          !searchFilter.test(club.name) &&
+          !searchFilter.test(club.description) &&
+          !searchFilter.test(club.presidents)
+        ) {
           return false;
         }
       }
@@ -83,7 +87,7 @@ class ClubList extends React.Component {
     return (
       <div className={`${styles.wrapper} ${selectedClub ? styles.clubSelected : ''}`}>
         <div className={styles.list}>
-          <h1> Gunn Clubs </h1> 
+          <h1> Gunn Clubs </h1>
           <div className={styles.searchWrapper}>
             <Search
               search={search}
