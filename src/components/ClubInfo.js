@@ -2,6 +2,10 @@ import React from 'react';
 import Button from './Button.js';
 import styles from './ClubInfo.module.css';
 
+/**
+ * Shows information about a club. This was designed according to the wireframe,
+ * but it's not used anymore.
+ */
 class ClubInfo extends React.Component {
   render() {
     const {name, description, joinable, meetingDay, meetingTime} = this.props;

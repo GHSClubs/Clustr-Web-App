@@ -17,6 +17,11 @@ function matchedString(string, searchFilter) {
   return parts;
 }
 
+/**
+ * Shows a club's name and tags, and reveals additional information when
+ * clicked. There is functionality to instead show the club information
+ * separately elsewhere, but it is not enabled.
+ */
 class Club extends React.Component {
   state = {
     open: false
