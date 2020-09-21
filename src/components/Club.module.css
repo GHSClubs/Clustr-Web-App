@@ -35,6 +35,9 @@
   padding: 5px 10px;
   border-radius: 50px;
 }
+.filtered {
+  background-color: white;
+}
 
 .field {
   margin: 0;

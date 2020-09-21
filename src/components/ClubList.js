@@ -83,6 +83,7 @@ class ClubList extends React.Component {
                 description={description}
                 meetingDay={day}
                 meetingTime={time}
+                filters={filters}
                 onSelect={this.handleSelectClub}
               />
             ))}

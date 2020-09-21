@@ -14,7 +14,7 @@ class Club extends React.Component {
   };
 
   render() {
-    const {name, color, tags, description, meetingDay, meetingTime} = this.props;
+    const {name, color, tags, description, meetingTime, filters} = this.props;
     const {open} = this.state;
     return (
       <button
@@ -24,7 +24,12 @@ class Club extends React.Component {
       >
         <h2 className={styles.name}>{name}</h2>
         <ul className={styles.tags}>
-          {tags.map(tag => <li className={styles.tag} key={tag}>{tag}</li>)}
+          {tags.map(tag => (
+            <li
+              className={`${styles.tag} ${filters.includes(tag) ? styles.filtered : ''}`}
+              key={tag}
+            >{tag}</li>
+          ))}
         </ul>
         {open && <>
           <p className={styles.field}>{description}</p>
