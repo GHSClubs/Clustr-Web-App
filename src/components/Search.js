@@ -10,10 +10,10 @@ class Search extends React.Component {
     return (
       <input
         type="search"
-        defaultValue={this.props.search}
+        value={this.props.search}
         placeholder="Search clubs"
         className={styles.search}
-        onInput={this.handleInput}
+        onChange={this.handleInput}
       />
     );
   }

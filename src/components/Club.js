@@ -54,7 +54,7 @@ class Club extends React.Component {
         {open && <>
           <p className={styles.field}>{matchedString(description, searchFilter)}</p>
           <p className={styles.field}>Time: <strong>{meetingTime}</strong></p>
-          <p className={styles.field}>President: {presidents}</p>
+          <p className={styles.field}>President: {matchedString(presidents, searchFilter)}</p>
           {zoomLink && <p className={styles.field}>Zoom link: <a
             className={styles.link}
             href={zoomLink}
