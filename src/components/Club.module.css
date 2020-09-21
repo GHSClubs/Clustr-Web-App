@@ -55,3 +55,8 @@
 .link:hover {
   text-decoration: underline;
 }
+
+.matched {
+  background-color: white;
+  border-radius: 0.1em;
+}

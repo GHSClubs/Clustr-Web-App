@@ -12,6 +12,11 @@
   -webkit-overflow-scrolling: touch;
 }
 
+.searchWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .info {
   flex: 2 0 0;
   padding: 20px;

@@ -1,6 +1,22 @@
 import React from 'react';
 import styles from './Club.module.css';
 
+function matchedString(string, searchFilter) {
+  if (!searchFilter) return string;
+  const parts = [];
+  // Reset .exec
+  searchFilter.lastIndex = 0;
+  let match = null;
+  let lastIndex = 0;
+  while ((match = searchFilter.exec(string))) {
+    parts.push(string.slice(lastIndex, match.index));
+    parts.push(<span className={styles.matched} key={match.index}>{match[0]}</span>);
+    lastIndex = match.index + match[0].length;
+  }
+  parts.push(string.slice(lastIndex));
+  return parts;
+}
+
 class Club extends React.Component {
   state = {
     open: false
@@ -18,7 +34,7 @@ class Club extends React.Component {
   };
 
   render() {
-    const {name, color, tags, description, meetingTime, presidents, zoomLink, filters} = this.props;
+    const {name, color, tags, description, meetingTime, presidents, zoomLink, searchFilter, filters} = this.props;
     const {open} = this.state;
     return (
       <button
@@ -26,7 +42,7 @@ class Club extends React.Component {
         style={{backgroundColor: color}}
         onClick={this.handleClick}
       >
-        <h2 className={styles.name}>{name}</h2>
+        <h2 className={styles.name}>{matchedString(name, searchFilter)}</h2>
         <ul className={styles.tags}>
           {tags.map(tag => (
             <li
@@ -36,7 +52,7 @@ class Club extends React.Component {
           ))}
         </ul>
         {open && <>
-          <p className={styles.field}>{description}</p>
+          <p className={styles.field}>{matchedString(description, searchFilter)}</p>
           <p className={styles.field}>Time: <strong>{meetingTime}</strong></p>
           <p className={styles.field}>President: {presidents}</p>
           {zoomLink && <p className={styles.field}>Zoom link: <a
