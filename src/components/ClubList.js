@@ -19,11 +19,8 @@ const allFilters = [
   {name: 'Wednesday', color: Colors.PINK},
   {name: 'Thursday', color: Colors.PINK},
   {name: 'Friday', color: Colors.PINK},
-  {name: 'Tier 1', color: Colors.VERY_LIGHT_ORANGE},
-  {name: 'Tier 2', color: Colors.LIGHT_ORANGE},
-  {name: 'Tier 3', color: Colors.ORANGE},
-  {name: 'New', color: Colors.BLUE},
-  {name: 'Returning', color: Colors.BLUE}
+  {name: 'New', color: Colors.DARK_ORANGE},
+  {name: 'Returning', color: Colors.DARK_ORANGE}
 ];
 
 // TODO: Alphabetize?
@@ -129,6 +126,7 @@ class ClubList extends React.Component {
               onChange={this.handleSearch}
             />
             <div>
+             
               <CategoryDropdown
                 categories={categories.map(category => [category, filters.includes(category)])}
                 onSelect={this.handleSelectFilter}
