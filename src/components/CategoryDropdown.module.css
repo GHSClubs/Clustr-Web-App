@@ -1,0 +1,47 @@
+.wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.opener {
+  cursor: pointer;
+  padding: 9px 14px;
+  border: 1px solid var(--pink);
+  border-radius: 5px;
+}
+
+.dropdown {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  overflow: auto;
+}
+
+.item {
+  display: flex;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+.item:hover {
+  background-color: var(--pink);
+}
+
+.check {
+  color: var(--blue);
+  margin-right: 15px;
+  visibility: hidden;
+}
+.selected .check {
+  visibility: visible;
+}
+
+.label {
+  flex: auto;
+  text-align: left;
+}
