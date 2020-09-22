@@ -5,6 +5,7 @@ import ClubInfo from './ClubInfo.js';
 import Colors from '../Colors.js';
 import FilterButton from './FilterButton.js';
 import Search from './Search.js';
+import CategoryDropdown from './CategoryDropdown.js';
 import styles from './ClubList.module.css';
 
 // https://stackoverflow.com/a/9310752
@@ -25,6 +26,20 @@ const allFilters = [
   {name: 'Returning', color: Colors.BLUE}
 ];
 
+// TODO: Alphabetize?
+const categories = [
+  'Service',
+  'STEM',
+  'Culture',
+  'Political',
+  'Social',
+  'Arts',
+  'Sports',
+  'Hobbies',
+  'Games',
+  'Entertainment'
+];
+
 /**
  * Displays clubs and makes them searchable and filterable.
  *
@@ -32,6 +47,7 @@ const allFilters = [
  * + -------------------------------------------------- +
  * | Gunn Clubs                  |                      |
  * | <Search>                    |                      |
+ * | <CategoryDropdown>          |                      |
  * | Filter by: <FilterButton>   |                      |
  * |   <FilterButton> ...        |      <ClubInfo>      |
  * | <Club>                      |   (unused for now)   |
@@ -112,6 +128,12 @@ class ClubList extends React.Component {
               search={search}
               onChange={this.handleSearch}
             />
+            <div>
+              <CategoryDropdown
+                categories={categories.map(category => [category, filters.includes(category)])}
+                onSelect={this.handleSelectFilter}
+              >Categories</CategoryDropdown>
+            </div>
             <div className={styles.filters}>
               Filter by:
               {allFilters.map(({name, color}) => (
@@ -119,7 +141,7 @@ class ClubList extends React.Component {
                   key={name}
                   name={name}
                   color={color}
-                  selected={this.state.filters.includes(name)}
+                  selected={filters.includes(name)}
                   onSelect={this.handleSelectFilter}
                 />
               ))}
