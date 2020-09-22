@@ -25,6 +25,25 @@ const allFilters = [
   {name: 'Returning', color: Colors.BLUE}
 ];
 
+/**
+ * Displays clubs and makes them searchable and filterable.
+ *
+ * <ClubList> components:
+ * + -------------------------------------------------- +
+ * | Gunn Clubs                  |                      |
+ * | <Search>                    |                      |
+ * | Filter by: <FilterButton>   |                      |
+ * |   <FilterButton> ...        |      <ClubInfo>      |
+ * | <Club>                      |   (unused for now)   |
+ * | <Club>                      |                      |
+ * | <Club>                      |                      |
+ * | <Club>                      |                      |
+ * | ...                         |                      |
+ * + -------------------------------------------------- +
+ *
+ * Club info is shown in <Club>s since <ClubInfo> is unused. The club data is
+ * received as a prop from <App> (see src/App.js).
+ */
 class ClubList extends React.Component {
   state = {
     selectedClub: null,
@@ -123,6 +142,7 @@ class ClubList extends React.Component {
               />
             ))}
         </div>
+        {/* <ClubInfo> is not used anymore (this is a vestigial structure). */}
         {selectedClub && (
           <div className={styles.info}>
             <Button

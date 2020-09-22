@@ -3,6 +3,10 @@ import './App.css';
 import ClubList from './components/ClubList.js';
 import Colors from './Colors.js';
 
+/**
+ * Fetches club data from a JSON then gives it as a prop to <ClubList>, which
+ * displays the clubs and makes it searchable and filterable.
+ */
 class App extends React.Component {
   state = {
     clubs: []
