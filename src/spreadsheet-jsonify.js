@@ -10,7 +10,8 @@ an array of the following form:
 const fs = require('fs')
 const fetch = require('node-fetch')
 
-const outFile = "clubs.json"
+// What is this, double quotes in StandardJS?
+const outFile = "public/gunn-clubs-2020-21.json"
 const columnMeanings = {
   2: "name",
   4: "description",
@@ -46,5 +47,26 @@ fetch("https://spreadsheets.google.com/feeds/cells/1vW-UJiqGgtMXYPPGjqYt5U3jwU6Z
 
     const clubs = Object.values(clubObjects)
 
-    fs.writeFile(outFile, JSON.stringify(clubs), () => console.log(`Finished writing ${clubs.length} clubs to ${outFile}`))
+    // fs.writeFile(outFile, JSON.stringify(clubs), () => console.log(`Finished writing ${clubs.length} clubs to ${outFile}`))
+
+    fs.readFile(outFile, 'utf-8', (err, file) => {
+      if (err) throw err
+
+      const clubList = JSON.parse(file)
+
+      for (const [clubName, club] of Object.entries(clubList)) {
+        const clubEntry = clubs.find(({ name }) => name === clubName)
+        if (clubEntry) {
+          club.categories = clubEntry.categories
+        } else {
+          console.warn('Could not find categories for club', clubName)
+        }
+      }
+
+      fs.writeFile(
+        outFile,
+        JSON.stringify(clubList, null, '\t'),
+        () => console.log(`Finished writing ${clubs.length} clubs to ${outFile}`)
+      )
+    })
   })
