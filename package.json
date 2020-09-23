@@ -2,7 +2,7 @@
   "name": "clustrwebapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://calebjkim.github.io/Clustr-Web-App/",
+  "homepage": "https://ghsclubs.github.io/Clustr-Web-App/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
