@@ -19,7 +19,7 @@
 		"president": "Martin Kim",
 		"teacher": "Quan Sims",
 		"email": "qsims@pausd.org",
-		"categories": "Service"
+		"categories": "Community"
 	},
 	"3D Printing and Design Club": {
 		"new": true,
@@ -52,7 +52,7 @@
 		"president": "Charlize Chu",
 		"teacher": "Mark Gleason",
 		"email": "mgleason@pausd.org",
-		"categories": "Service, Community"
+		"categories": "Community"
 	},
 	"Aeronautical, Naval, and Automotive Association": {
 		"new": false,
@@ -63,7 +63,7 @@
 		"president": "Matthew Lum",
 		"teacher": "Mike Camicia",
 		"email": "mcamicia@pausd.org",
-		"categories": "Hobbies"
+		"categories": "STEM"
 	},
 	"Aeronautics Association": {
 		"new": false,
@@ -106,7 +106,7 @@
 		"president": "Kel-Li (Kelli) Chen",
 		"teacher": "Laura Lizundia",
 		"email": "llizundia@pausd.org",
-		"categories": "Social"
+		"categories": "Community, Political"
 	},
 	"Arab Culture Club": {
 		"new": false,
@@ -139,7 +139,7 @@
 		"president": "Jessica Wang",
 		"teacher": "Rachel Dion",
 		"email": "rdion@pausd.org",
-		"categories": "Culture"
+		"categories": "Community, Culture"
 	},
 	"Best Buddies Club": {
 		"new": false,
@@ -150,7 +150,7 @@
 		"president": "Hyewon Ahn",
 		"teacher": "Sandra Conklin",
 		"email": "sconklin@pausd.org",
-		"categories": "Social"
+		"categories": "Community"
 	},
 	"Bikex Club": {
 		"new": true,
@@ -161,7 +161,7 @@
 		"president": "Shree Sandilya",
 		"teacher": "Karen Saxena",
 		"email": "ksaxena@pausd.org",
-		"categories": "Hobbies, Sports"
+		"categories": "Profession, Sports"
 	},
 	"Biotechnology Club": {
 		"new": true,
@@ -185,7 +185,7 @@
 		"coemail": "plaplace@pausd.org",
 		"teacher": "Myesha Dickson",
 		"email": "mcompton@pausd.org",
-		"categories": "Social, Culture, Politics"
+		"categories": "Community, Culture"
 	},
 	"Bridge Club": {
 		"new": false,
@@ -208,7 +208,7 @@
 		"president": "Julia Ng",
 		"teacher": "Kathy Hawes",
 		"email": "khawes@pausd.org",
-		"categories": "Service"
+		"categories": "Community"
 	},
 	"Chamber Music Club": {
 		"new": false,
@@ -241,7 +241,7 @@
 		"president": "Elena Creason",
 		"teacher": "Patricia Holmes",
 		"email": "pholmes@pausd.org",
-		"categories": "Culture"
+		"categories": "Religion"
 	},
 	"Climbing Club": {
 		"new": false,
@@ -284,7 +284,7 @@
 		"president": "Aanya Vusirikala",
 		"teacher": "Kristen Owen",
 		"email": "kowen@pausd.org",
-		"categories": "Hobbies"
+		"categories": "Arts, Profession"
 	},
 	"Cryptology Club": {
 		"new": false,
@@ -317,7 +317,7 @@
 		"president": "Inga Gous",
 		"teacher": "Liz Matchett",
 		"email": "lmatchett@pausd.org",
-		"categories": "Service"
+		"categories": "Community"
 	},
 	"Dungeons and Dragons Club": {
 		"new": false,
@@ -350,7 +350,7 @@
 		"president": "Ryan Choi",
 		"teacher": "Jennel Lopez",
 		"email": "jlopez@pausd.org",
-		"categories": "Games"
+		"categories": "Games, Sports"
 	},
 	"Film Club": {
 		"new": false,
@@ -361,7 +361,7 @@
 		"president": "Ian Brown",
 		"teacher": "Edward Corpuz",
 		"email": "ecorpuz@pausd.org",
-		"categories": "Hobbies"
+		"categories": "Arts, Profession"
 	},
 	"French Club/ National French Honor Society": {
 		"new": false,
@@ -405,7 +405,7 @@
 		"president": "Nikki Suzani",
 		"teacher": "Adam Yonkers",
 		"email": "ayonkers@pausd.org",
-		"categories": "Social, Politics"
+		"categories": "Community, Political"
 	},
 	"German Club": {
 		"new": false,
@@ -440,7 +440,7 @@
 		"president": "Saman de Silva",
 		"teacher": "Eric Ledgerwood",
 		"email": "eledgerwood@pausd.org",
-		"categories": "Service"
+		"categories": "Community"
 	},
 	"GSA (Gender and Sexuality Alliance)": {
 		"new": false,
@@ -451,7 +451,7 @@
 		"president": "Claire Morse",
 		"teacher": "Daisy Renazco",
 		"email": "drenazco@pausd.org",
-		"categories": "Social"
+		"categories": "Community"
 	},
 	"Gunn Med Club": {
 		"new": false,
@@ -473,7 +473,7 @@
 		"president": "Aaron Cheung",
 		"teacher": "Dr. Heather Mellows",
 		"email": "hmellows@pausd.org",
-		"categories": "Hobbies"
+		"categories": "Misc."
 	},
 	"Health Club": {
 		"new": false,
@@ -495,7 +495,7 @@
 		"president": "Jessica Zang",
 		"teacher": "Mark Gleason",
 		"email": "mgleason@pausd.org",
-		"categories": "Arts"
+		"categories": "Arts, Community"
 	},
 	"Hip Hop Club": {
 		"new": false,
@@ -550,7 +550,7 @@
 		"president": "Hadi Mirza",
 		"teacher": "Kristen Owen",
 		"email": "kowen@pausd.org",
-		"categories": "Culture"
+		"categories": "Religion"
 	},
 	"Japanese Culture Club": {
 		"new": false,
@@ -572,7 +572,7 @@
 		"president": "Lotem Efrat",
 		"teacher": "Elana Zizmor",
 		"email": "ezizmor@pausd.org",
-		"categories": "Culture"
+		"categories": "Religion"
 	},
 	"K-Pop Dance Club": {
 		"new": true,
@@ -583,7 +583,7 @@
 		"president": "Megan Murakami",
 		"teacher": "Brenda Chen",
 		"email": "bchen@pausd.org",
-		"categories": "Culture"
+		"categories": "Arts, Culture"
 	},
 	"Key Club": {
 		"new": false,
@@ -594,7 +594,7 @@
 		"president": "Madeline Siu",
 		"teacher": "Katherine Ja",
 		"email": "kja@pausd.org",
-		"categories": "Service"
+		"categories": "Community"
 	},
 	"Learning Through Entrepreneurship": {
 		"new": false,
@@ -605,7 +605,7 @@
 		"president": "Alson Chan",
 		"teacher": "Marcus Jamison",
 		"email": "mjamison@pausd.org",
-		"categories": "Service"
+		"categories": "Profession"
 	},
 	"Math Circle": {
 		"new": false,
@@ -660,7 +660,7 @@
 		"president": "Quentin Swindells",
 		"teacher": "Maria Powell",
 		"email": "mpowell@pausd.org",
-		"categories": "Political"
+		"categories": "Community, Political"
 	},
 	"Music Society": {
 		"new": false,
@@ -682,7 +682,7 @@
 		"president": "Nuha Mozumder",
 		"teacher": "Haley Perkins",
 		"email": "hperkins@pausd.org",
-		"categories": "Culture"
+		"categories": "Religion"
 	},
 	"National Art Honor Society": {
 		"new": false,
@@ -717,7 +717,7 @@
 		"coemail": "lmatchett@pausd.org",
 		"teacher": "Cindy Peters",
 		"email": "cpeters@pausd.org",
-		"categories": "Hobbies"
+		"categories": "Misc."
 	},
 	"Pandora's Box Creative Magazine": {
 		"new": false,
@@ -728,7 +728,7 @@
 		"president": "Lillian Fong",
 		"teacher": "Paul Dunlap",
 		"email": "pdunlap@pausd.org",
-		"categories": "Arts"
+		"categories": "Arts, Profession"
 	},
 	"Paper Airplanes Club": {
 		"new": false,
@@ -739,7 +739,7 @@
 		"president": "Neha Rishi",
 		"teacher": "Jeff Patrick",
 		"email": "jpatrick@pausd.org",
-		"categories": "Social"
+		"categories": "Misc."
 	},
 	"PC Building Club": {
 		"new": true,
@@ -750,7 +750,7 @@
 		"president": "Shinmu Jiang",
 		"teacher": "David Bisbee",
 		"email": "dbisbee@pausd.org",
-		"categories": "STEM"
+		"categories": "STEM, Misc."
 	},
 	"Physics and Astronomy Club": {
 		"new": true,
@@ -783,7 +783,7 @@
 		"president": "Clair Koo",
 		"teacher": "Julie Munger",
 		"email": "jmunger@pausd.org",
-		"categories": "Social"
+		"categories": "Misc."
 	},
 	"Powerlifting/Weightlifting Club": {
 		"new": true,
@@ -827,7 +827,7 @@
 		"president": "Akul Datta",
 		"teacher": "Brittany Axelrod",
 		"email": "baxelrod@pausd.org",
-		"categories": "Social"
+		"categories": "Misc."
 	},
 	"Quiz Bowl Club": {
 		"new": false,
@@ -838,7 +838,7 @@
 		"president": "Nikhil Chaudhary",
 		"teacher": "Lynn Tabuchi",
 		"email": "ltabuchi@pausd.org",
-		"categories": "Social"
+		"categories": "Misc."
 	},
 	"Reach Out, Care, Know (ROCK)": {
 		"new": false,
@@ -849,7 +849,7 @@
 		"president": "Kate Williams",
 		"teacher": "Paul Dunlap",
 		"email": "pdunlap@pausd.org",
-		"categories": "Social"
+		"categories": "Community, Misc."
 	},
 	"Red Cross": {
 		"new": false,
@@ -871,7 +871,7 @@
 		"president": "Kristy Rueff",
 		"teacher": "Timothy Aston",
 		"email": "taston@pausd.org",
-		"categories": "Social"
+		"categories": "Misc."
 	},
 	"Research Science Innovation (RSI)": {
 		"new": false,
@@ -893,7 +893,7 @@
 		"president": "Martin Chaperot-Merino",
 		"teacher": "Jena Lee",
 		"email": "jlee@pausd.org",
-		"categories": "Social"
+		"categories": "Misc."
 	},
 	"SAGE Club": {
 		"new": false,
@@ -904,7 +904,7 @@
 		"president": "Calvin Cai",
 		"teacher": "Phil Lyons",
 		"email": "plyons@pausd.org",
-		"categories": "Business"
+		"categories": "Profession"
 	},
 	"Science Bowl": {
 		"new": true,
@@ -949,7 +949,7 @@
 		"president": "Athina Chen",
 		"teacher": "Chris Redfield",
 		"email": "credfield@pausd.org",
-		"categories": "Business"
+		"categories": "Profession"
 	},
 	"Spanish Club": {
 		"new": false,
@@ -971,7 +971,7 @@
 		"president": "Sachait Arun",
 		"teacher": "Diane Gleason",
 		"email": "dgleason@pausd.org",
-		"categories": "Social"
+		"categories": "Community, Profession"
 	},
 	"Sports Analytics Club": {
 		"new": true,
@@ -993,7 +993,7 @@
 		"president": "Yu-Ting Chang",
 		"teacher": "Anne Marie Metzler",
 		"email": "ametzler@pausd.org",
-		"categories": "Entertainment"
+		"categories": "Misc."
 	},
 	"Surfrider": {
 		"new": false,
@@ -1004,7 +1004,7 @@
 		"president": "Catherine Fiorentino",
 		"teacher": "Marcus Jamison",
 		"email": "mjamison@pausd.org",
-		"categories": "Community"
+		"categories": "Community, Misc."
 	},
 	"TEDxGunnHighSchool": {
 		"new": false,
@@ -1017,7 +1017,7 @@
 		"coemail": "eledgerwood@pausd.org",
 		"teacher": "Jessica Hexsel",
 		"email": "jhexsel@pausd.org",
-		"categories": "Social"
+		"categories": "Arts, Profession, Misc."
 	},
 	"The Chariot": {
 		"new": false,
@@ -1028,7 +1028,7 @@
 		"president": "Neha Muthiah",
 		"teacher": "Justin Brown",
 		"email": "jdbrown@pausd.org",
-		"categories": "Social"
+		"categories": "Arts, Profession"
 	},
 	"The Muse": {
 		"new": false,
@@ -1039,7 +1039,7 @@
 		"president": "Shana Ebrahimnejad",
 		"teacher": "Daljeet Gill",
 		"email": "dgill@pausd.org",
-		"categories": "Social"
+		"categories": "Arts, Community, Misc."
 	},
 	"The Music Studio": {
 		"new": true,
@@ -1071,7 +1071,7 @@
 		"president": "Evelyn Gaskin",
 		"teacher": "Lynne Navarro",
 		"email": "lnavarro@pausd.org",
-		"categories": "Social"
+		"categories": "Arts"
 	},
 	"Thespian Club": {
 		"new": false,
@@ -1093,7 +1093,7 @@
 		"president": "Jonathan Tsang",
 		"teacher": "Amy Anderson",
 		"email": "amanderson@pausd.org",
-		"categories": "Social"
+		"categories": "Community, Misc."
 	},
 	"TItan Science Journal Club": {
 		"new": true,
@@ -1104,7 +1104,7 @@
 		"president": "Clair Koo",
 		"teacher": "Jennel Lopez",
 		"email": "jlopez@pausd.org",
-		"categories": "STEM"
+		"categories": "STEM, Profession"
 	},
 	"Title IX Club": {
 		"new": true,
