@@ -25,16 +25,16 @@ const allFilters = [
 
 // TODO: Alphabetize?
 const categories = [
-  'Service',
-  'STEM',
-  'Culture',
-  'Political',
-  'Social',
   'Arts',
-  'Sports',
-  'Hobbies',
+  'Community',
+  'Culture',
   'Games',
-  'Entertainment'
+  'Misc.',
+  'Political',
+  'Profession',
+  'Religion',
+  'STEM',
+  'Sports'
 ];
 
 /**
